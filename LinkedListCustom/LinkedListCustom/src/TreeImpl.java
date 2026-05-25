@@ -52,7 +52,7 @@ public class TreeImpl {
 				root.left = new Node(i);
 			}
 		}else if(i > root.key) {
-			if(root.right!=null) {
+			if(root.right != null) {
 				insert(root.right, i);
 			}else {
 				System.out.println(" Inserted " + i + " to right of " + root.key);

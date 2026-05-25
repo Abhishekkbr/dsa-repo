@@ -8,20 +8,20 @@ public class ClimibingStairs {
 		System.out.println(waysDp);
 	}
 
-	private static int climbingStairsDp(int i) {
+	private static int climbingStairsDp(int n) {
 		// TODO Auto-generated method stub
-		if(i <= 1) {
-			return 1;
-		}
-		int[] dp = new int[i+1];
-		dp[0] = 1;
-		dp[1] = 1;
-		 
-		for(int n = 2 ; n <= i ; n++) {
-			dp[n] = dp[n-1] + dp[n-2];
-		}
-		
-		return dp[i];
+		if (n <= 2) {
+            return n;
+        }
+
+        int[] dp = new int[n+1];
+        dp[1] = 1;
+        dp[2] = 2;
+
+        for (int i = 3 ; i <= n ; i++) {
+            dp[i] = dp[i-1] + dp[i-2];
+        }
+        return dp[n];
 	}
 
 	private static int climbingStairsRecursive(int i) {
