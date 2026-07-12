@@ -12,10 +12,10 @@ public class EditDistance {
 		int[][] dp = new int[m+1][n+1];
 		
 		for(int i = 0 ; i <=m ; i++) {
-			dp[i][0] = i;						//delete all
+			dp[i][0] = i;						//delete all as target is 0
 		}
 		for(int j = 0 ; j <=n ; j++) {
-			dp[0][j] = j;						//insert all
+			dp[0][j] = j;						//insert all as source is 0
 		}
 		
 		for(int i = 1 ; i <= m ; i++) {
