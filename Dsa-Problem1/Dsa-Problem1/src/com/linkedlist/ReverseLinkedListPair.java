@@ -1,4 +1,4 @@
-package com.random;
+package com.linkedlist;
 
 public class ReverseLinkedListPair {
     static class ListNode {
