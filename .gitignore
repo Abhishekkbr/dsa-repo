@@ -1,0 +1,11 @@
+# Compiled output
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# macOS
+.DS_Store
