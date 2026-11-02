@@ -19,7 +19,7 @@ public class ReverseKGroup {
 
         ReverseKGroup solution = new ReverseKGroup();
         ListNode result = solution.reverseKGroup(head, 3);
-        printList(result);   // 2 -> 1 -> 4 -> 3 -> 5 -> null
+        printList(result);   // 3 -> 2 -> 1 -> 6 -> 5 -> 4 -> null
     }
 
     private static void printList(ListNode result) {
